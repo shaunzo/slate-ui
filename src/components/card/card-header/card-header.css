@@ -1,0 +1,5 @@
+@import "../../../globals/styles/_variables.css";
+
+.sui-card-header {
+  margin-bottom: var(--space-increment);
+}

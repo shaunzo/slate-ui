@@ -1,0 +1,17 @@
+@import "./_variables.css";
+
+html {
+  font-family: var(--font-family);
+}
+
+
+sui-card-header {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+sui-card-header .sub-header {
+  font-weight: normal;
+  font-size: var(--space-increment);
+  margin-top: var(--space-increment);
+}

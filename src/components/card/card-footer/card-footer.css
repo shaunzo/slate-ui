@@ -1,0 +1,5 @@
+@import "../../../globals/styles/_variables.css";
+div {
+  border-top: 1px solid var(--primary);
+  padding-top: var(--space-increment);
+}

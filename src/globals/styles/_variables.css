@@ -1,0 +1,16 @@
+:root {
+  /* Colours */
+  --primary: #738290;
+  --dark: #2A2B2E;
+
+  /* Spacing */
+  --space-increment: 1rem;
+
+  /* Typography */
+  --font-family: sans-serif;
+
+  /* Cards */
+  /* flex: grow | shrink | width */
+  --card-flex: 0 0 33%;
+}
+

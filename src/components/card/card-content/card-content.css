@@ -1,0 +1,4 @@
+@import "../../../globals//styles/_variables.css";
+div {
+  margin-bottom: var(--space-increment);
+}
