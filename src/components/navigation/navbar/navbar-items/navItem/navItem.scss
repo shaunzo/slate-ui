@@ -1,0 +1,11 @@
+@import '../../../../../globals/styles/variables';
+
+:host {
+  display: inline-flex;
+  margin-right: $space-increment;
+}
+
+:host([alignRight='true']) {
+  margin-right: 0;
+  margin-left: $space-increment;
+}

@@ -31,6 +31,9 @@ export namespace Components {
     'cardContent': any;
   }
   interface SuiCardHeader {}
+  interface SuiNavItem {
+    'alignRight': boolean;
+  }
   interface SuiNavbar {
     'navItemsLeft': any[];
     'navItemsRight': any[];
@@ -86,6 +89,12 @@ declare global {
     new (): HTMLSuiCardHeaderElement;
   };
 
+  interface HTMLSuiNavItemElement extends Components.SuiNavItem, HTMLStencilElement {}
+  var HTMLSuiNavItemElement: {
+    prototype: HTMLSuiNavItemElement;
+    new (): HTMLSuiNavItemElement;
+  };
+
   interface HTMLSuiNavbarElement extends Components.SuiNavbar, HTMLStencilElement {}
   var HTMLSuiNavbarElement: {
     prototype: HTMLSuiNavbarElement;
@@ -116,6 +125,7 @@ declare global {
     'sui-card-footer': HTMLSuiCardFooterElement;
     'sui-card-group': HTMLSuiCardGroupElement;
     'sui-card-header': HTMLSuiCardHeaderElement;
+    'sui-nav-item': HTMLSuiNavItemElement;
     'sui-navbar': HTMLSuiNavbarElement;
     'sui-navbar-items': HTMLSuiNavbarItemsElement;
     'sui-scroll-anim': HTMLSuiScrollAnimElement;
@@ -145,6 +155,9 @@ declare namespace LocalJSX {
     'cardContent'?: any;
   }
   interface SuiCardHeader {}
+  interface SuiNavItem {
+    'alignRight'?: boolean;
+  }
   interface SuiNavbar {
     'navItemsLeft'?: any[];
     'navItemsRight'?: any[];
@@ -167,6 +180,7 @@ declare namespace LocalJSX {
     'sui-card-footer': SuiCardFooter;
     'sui-card-group': SuiCardGroup;
     'sui-card-header': SuiCardHeader;
+    'sui-nav-item': SuiNavItem;
     'sui-navbar': SuiNavbar;
     'sui-navbar-items': SuiNavbarItems;
     'sui-scroll-anim': SuiScrollAnim;
@@ -186,6 +200,7 @@ declare module "@stencil/core" {
       'sui-card-footer': LocalJSX.SuiCardFooter & JSXBase.HTMLAttributes<HTMLSuiCardFooterElement>;
       'sui-card-group': LocalJSX.SuiCardGroup & JSXBase.HTMLAttributes<HTMLSuiCardGroupElement>;
       'sui-card-header': LocalJSX.SuiCardHeader & JSXBase.HTMLAttributes<HTMLSuiCardHeaderElement>;
+      'sui-nav-item': LocalJSX.SuiNavItem & JSXBase.HTMLAttributes<HTMLSuiNavItemElement>;
       'sui-navbar': LocalJSX.SuiNavbar & JSXBase.HTMLAttributes<HTMLSuiNavbarElement>;
       'sui-navbar-items': LocalJSX.SuiNavbarItems & JSXBase.HTMLAttributes<HTMLSuiNavbarItemsElement>;
       'sui-scroll-anim': LocalJSX.SuiScrollAnim & JSXBase.HTMLAttributes<HTMLSuiScrollAnimElement>;
