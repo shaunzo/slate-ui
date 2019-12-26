@@ -31,6 +31,13 @@ export namespace Components {
     'cardContent': any;
   }
   interface SuiCardHeader {}
+  interface SuiNavbar {
+    'navItemsLeft': any[];
+    'navItemsRight': any[];
+  }
+  interface SuiNavbarItems {
+    'position': string;
+  }
   interface SuiScrollAnim {}
   interface SuiSeparator {
     /**
@@ -79,6 +86,18 @@ declare global {
     new (): HTMLSuiCardHeaderElement;
   };
 
+  interface HTMLSuiNavbarElement extends Components.SuiNavbar, HTMLStencilElement {}
+  var HTMLSuiNavbarElement: {
+    prototype: HTMLSuiNavbarElement;
+    new (): HTMLSuiNavbarElement;
+  };
+
+  interface HTMLSuiNavbarItemsElement extends Components.SuiNavbarItems, HTMLStencilElement {}
+  var HTMLSuiNavbarItemsElement: {
+    prototype: HTMLSuiNavbarItemsElement;
+    new (): HTMLSuiNavbarItemsElement;
+  };
+
   interface HTMLSuiScrollAnimElement extends Components.SuiScrollAnim, HTMLStencilElement {}
   var HTMLSuiScrollAnimElement: {
     prototype: HTMLSuiScrollAnimElement;
@@ -97,6 +116,8 @@ declare global {
     'sui-card-footer': HTMLSuiCardFooterElement;
     'sui-card-group': HTMLSuiCardGroupElement;
     'sui-card-header': HTMLSuiCardHeaderElement;
+    'sui-navbar': HTMLSuiNavbarElement;
+    'sui-navbar-items': HTMLSuiNavbarItemsElement;
     'sui-scroll-anim': HTMLSuiScrollAnimElement;
     'sui-separator': HTMLSuiSeparatorElement;
   }
@@ -124,6 +145,13 @@ declare namespace LocalJSX {
     'cardContent'?: any;
   }
   interface SuiCardHeader {}
+  interface SuiNavbar {
+    'navItemsLeft'?: any[];
+    'navItemsRight'?: any[];
+  }
+  interface SuiNavbarItems {
+    'position'?: string;
+  }
   interface SuiScrollAnim {}
   interface SuiSeparator {
     /**
@@ -139,6 +167,8 @@ declare namespace LocalJSX {
     'sui-card-footer': SuiCardFooter;
     'sui-card-group': SuiCardGroup;
     'sui-card-header': SuiCardHeader;
+    'sui-navbar': SuiNavbar;
+    'sui-navbar-items': SuiNavbarItems;
     'sui-scroll-anim': SuiScrollAnim;
     'sui-separator': SuiSeparator;
   }
@@ -156,6 +186,8 @@ declare module "@stencil/core" {
       'sui-card-footer': LocalJSX.SuiCardFooter & JSXBase.HTMLAttributes<HTMLSuiCardFooterElement>;
       'sui-card-group': LocalJSX.SuiCardGroup & JSXBase.HTMLAttributes<HTMLSuiCardGroupElement>;
       'sui-card-header': LocalJSX.SuiCardHeader & JSXBase.HTMLAttributes<HTMLSuiCardHeaderElement>;
+      'sui-navbar': LocalJSX.SuiNavbar & JSXBase.HTMLAttributes<HTMLSuiNavbarElement>;
+      'sui-navbar-items': LocalJSX.SuiNavbarItems & JSXBase.HTMLAttributes<HTMLSuiNavbarItemsElement>;
       'sui-scroll-anim': LocalJSX.SuiScrollAnim & JSXBase.HTMLAttributes<HTMLSuiScrollAnimElement>;
       'sui-separator': LocalJSX.SuiSeparator & JSXBase.HTMLAttributes<HTMLSuiSeparatorElement>;
     }

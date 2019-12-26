@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  border: 1px solid red;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+
+:host([position='right']) {
+  justify-content: flex-end;
+}

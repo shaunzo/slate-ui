@@ -1,8 +1,8 @@
-import { Component, h, Prop } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 
 @Component({
   tag: 'sui-card-content',
-  styleUrl: './card-content.css',
+  styleUrl: './card-content.scss',
   shadow: true
 })
 

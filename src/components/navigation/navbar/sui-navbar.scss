@@ -1,0 +1,17 @@
+@import '../../../globals/styles/variables';
+
+.sui-navbar {
+  display: flex;
+  background-color: $primary;
+  padding: $space-increment;
+  color: #fff;
+  border-bottom: 2px solid $dark;
+
+  .nav-bar__wrapper {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: row;
+  }
+}
+

@@ -2,7 +2,7 @@ import { Component, Element, h } from '@stencil/core';
 
 @Component({
   tag: 'sui-scroll-anim',
-  styleUrl: 'sui-scroll-anim.css',
+  styleUrl: 'sui-scroll-anim.scss',
   shadow: false
 })
 

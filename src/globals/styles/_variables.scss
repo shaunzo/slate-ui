@@ -1,10 +1,14 @@
+$primary: #738290;
+$dark: #2A2B2E;
+$space-increment: 1rem;
+
 :root {
   /* Colours */
-  --primary: #738290;
-  --dark: #2A2B2E;
+  --primary: $primary;
+  --dark: $dark;
 
   /* Spacing */
-  --space-increment: 1rem;
+  --space-increment: $space-increment;
 
   /* Typography */
   --font-family: sans-serif;

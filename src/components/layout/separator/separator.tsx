@@ -2,7 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
   tag: 'sui-separator',
-  styleUrl: 'sui-separator.css',
+  styleUrl: 'sui-separator.scss',
   shadow: true
 })
 export class Separator {

@@ -1,9 +1,8 @@
 import { Component, h, Prop } from '@stencil/core';
-import { Card } from './card.interface';
 
 @Component({
   tag: 'sui-card-group',
-  styleUrl: './card-group.css',
+  styleUrl: './card-group.scss',
   shadow: true
 })
 
